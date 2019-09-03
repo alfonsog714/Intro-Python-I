@@ -22,3 +22,12 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+# month = 0
+# year = 2019
+
+# if len(sys.argv) == 1:
+#   print(calendar.monthcalendar(year, 8)) 
+#   quit()
+
+

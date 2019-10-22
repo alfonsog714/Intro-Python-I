@@ -22,3 +22,26 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+# month = 0
+# year = 2019
+
+if len(sys.argv) == 1:
+  monthNum = datetime.now().month
+  print(calendar.month(2019, monthNum)) 
+  quit()
+
+elif len(sys.argv) == 2:
+  monthNum = int(sys.argv[1])
+  print(calendar.month(2019, monthNum))
+  quit()
+
+elif len(sys.argv) == 3:
+  monthNum = int(sys.argv[1])
+  yearNum = int(sys.argv[2])
+  print(calendar.month(yearNum, monthNum))
+  quit()
+
+else:
+  print("This program takes in 2 arguments: year in integer form and month in integer form")
+
